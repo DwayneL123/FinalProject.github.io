@@ -3,7 +3,7 @@
   --primary-medium: #001f54;
   --primary-light: #034078;
   --accent: #1282a2;
-  --background: #fafafa;
+  --background: #fefcfb;
   --text-light: #fefcfb;
   --Secondary-bg: #dbe9f4;
   --shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 15px rgba(0, 0, 0, 0.1);
@@ -13,10 +13,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
   background-color: var(--background);
   color: var(--primary-dark);
   min-height: 100vh;
@@ -28,11 +28,10 @@ body {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  padding-top: 115px;
+  padding-top: 58px;
 }
 
 .main-nav {
-  font-family: 'Inter', sans-serif;
   width: 100%;
   background-color: var(--primary-dark);
   position: fixed;
@@ -52,7 +51,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--primary-medium);
+  padding: 0 20px;
 }
 
 .logo-container {
@@ -63,7 +62,7 @@ body {
 
 .logo {
   margin-left: 15px;
-  height: 55px;
+  height: 35px;
   width: auto;
   display: block;
 }
@@ -71,21 +70,18 @@ body {
 .site-title {
   font-family: 'Playfair Display', serif;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: bold;
   color: var(--text-light);
   margin: 0;
 }
 
 .nav-links {
-  height: 57px;
   display: flex;
   align-items: center;
-  gap: 32px;
-  padding-left: 650px;
+  gap: 20px;
 }
 
 .nav-link {
-  font-family: 'Inter', sans-serif;
   font-size: 16px;
   color: var(--text-light);
   text-decoration: none;
@@ -95,7 +91,7 @@ body {
 
 .nav-link:hover,
 .nav-link:focus {
-  background-color: gray;
+  background-color: #1282a2;
 }
 
 .dropdown {
@@ -123,7 +119,6 @@ body {
 }
 
 .dropdown-content a {
-  font-family: 'Inter', sans-serif;
   color: var(--text-light);
   padding: 12px 16px;
   text-decoration: none;
@@ -231,37 +226,43 @@ body {
   margin: 0 auto;
 }
 
-.footer-row {
+.footer-row.fixed-two {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 48px;
+  flex-wrap: nowrap;
 }
 
 .footer-section {
-  font-family: 'Inter', sans-serif;
   flex: 1;
-  min-width: 300px;
+  max-width: 50%;
+}
+
+.about-us {
+  text-align: left;
+}
+
+.contact-us {
+  margin-left: 500px;
+  text-align: left;
 }
 
 .footer-title {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: bold;
   margin-bottom: 16px;
   color: var(--text-light);
 }
 
 .footer-text {
-  font-family: 'Inter', sans-serif;
   font-size: 16px;
   margin-bottom: 16px;
   line-height: 1.5;
 }
 
 .footer-link {
-  font-family: 'Inter', sans-serif;
   font-size: 16px;
   color: var(--text-light);
   text-decoration: none;
@@ -294,7 +295,6 @@ body {
   border-radius: 4px;
   background: transparent;
   color: var(--text-light);
-  font-family: 'Inter', sans-serif;
 }
 
 .newsletter-input::placeholder {
@@ -308,7 +308,6 @@ body {
   border-radius: 4px;
   color: var(--text-light);
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
   transition: background-color 0.2s ease;
 }
 
@@ -321,4 +320,192 @@ button:focus,
 input:focus {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.nav-toggle-label span {
+  display: block;
+  height: 3px;
+  background-color: var(--text-light);
+  border-radius: 2px;
+}
+
+@media (max-width: 1024px) {
+ .inventions-section {
+    padding: 40px 16px;
+  }
+
+  .inventions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .invention-card img {
+    height: 180px;
+  }
+
+  .section-title {
+    font-size: 40px;
+  }
+
+  .topic-description {
+    font-size: 17px;
+  }
+
+  .footer-row.fixed-two {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .contact-us {
+    margin-left: 0;
+  }
+
+  .footer-section {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .inventions-section {
+    padding: 32px 12px;
+  }
+
+  .inventions-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .invention-card img {
+    height: 160px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .topic-description {
+    font-size: 16px;
+  }
+
+  .nav-top {
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    padding: 12px 20px;
+  }
+
+  .nav-toggle-label {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: var(--primary-dark);
+    position: absolute;
+    top: 58px;
+    left: 0;
+    z-index: 999;
+    padding: 12px 20px;
+  }
+
+  .nav-toggle:checked + .nav-toggle-label + .nav-links {
+    display: flex;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: block;
+    position: static;
+    box-shadow: none;
+    background-color: var(--primary-medium);
+    margin-top: 0;
+  }
+  
+  .nav-toggle:checked ~ .nav-links .dropdown-content {
+    display: none;
+  }
+
+  .dropdown-content a {
+    padding-left: 24px;
+  }
+
+  .footer-row.fixed-two {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-title {
+    font-size: 18px;
+  }
+
+  .footer-text,
+  .footer-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+
+    .inventions-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .invention-card img {
+    height: 140px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .topic-description {
+    font-size: 15px;
+    text-indent: 30px;
+  }
+
+  .invention-info {
+    padding: 16px;
+  }
+
+  .category {
+    font-size: 16px;
+  }
+
+  .invention-title,
+  .author,
+  .date {
+    font-size: 14px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .footer-title {
+    font-size: 16px;
+  }
+
+  .footer-text,
+  .footer-link {
+    font-size: 13px;
+  }
 }
