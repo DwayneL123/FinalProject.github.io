@@ -7,62 +7,71 @@
     <link rel="stylesheet" href="homepage.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   </head>
-</head>
-<body>
-  <div class="page-container">
-    <header>
-      <nav class="main-nav">
-        <div class="nav-container">
-          <div class="nav-top">
-            <div class="logo-container">
-              <a href="homepage.html">
-                <img
-                  src="logo.png"
-                  alt="Technological innovations throughout history"
-                  class="logo"/>
-              </a>
-              <h1 class="site-title">TechThrough</h1>
+  <body>
+    <div class="page-container">
+      <header>
+        <nav class="main-nav">
+          <div class="nav-container">
+            <div class="nav-top">
+              <div class="logo-container">
+                <a href="homepage.html">
+                  <img
+                    src="logo.png"
+                    alt="Technological innovations throughout history"
+                    class="logo"
+                  />
+                </a>
+                <h1 class="site-title">TechThrough</h1>
+              </div>
+
+              
+              <input type="checkbox" id="nav-toggle" class="nav-toggle">
+              <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+
+              <div class="nav-links">
+                <a href="homepage.html" class="nav-link">Home</a>
+                <a href="AboutUs/aboutus.html" class="nav-link">About Us</a>
+                <div class="dropdown">
+                  <a href="Inventors/inventors.html" class="nav-link">Inventors</a>
+                  <ul class="dropdown-content">
+                    <li><a href="Inventors/thomasedison.html">Thomas Edison</a></li>
+                    <li><a href="Inventors/grahambell.html">Alexander Graham Bell</a></li>
+                    <li><a href="Inventors/nikolatesla.html">Nikola Tesla</a></li>
+                    <li><a href="Inventors/bernerslee.html">Tim Berners-Lee</a></li>
+                    <li><a href="Inventors/karlbenz.html">Karl Benz</a></li>
+                    <li><a href="Inventors/charlesbabbage.html">Charles Babbage</a></li>
+                    <li><a href="Inventors/martincooper.html">Martin Cooper</a></li>
+                    <li><a href="Inventors/georgewashington.html">George Washington Carver</a></li>
+                    <li><a href="Inventors/heddylamarr.html">Hedy Lamarr</a></li>
+                    <li><a href="Inventors/gladyswest.html">Gladys West</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <a href="Subtopics/subtopics.html" class="nav-link">Categories</a>
+                  <ul class="dropdown-content">
+                    <li><a href="Inventions/transportation/transportation.html">Transportation</a></li>
+                    <li><a href="Inventions/communication/communication.html">Communication</a></li>
+                    <li><a href="Inventions/modern innovation/moderninnovation.html">Modern Innovations</a></li>
+                    <li><a href="Inventions/medical technology/medicaltechnology.html">Medical Technology</a></li>
+                    <li><a href="Inventions/agriculture/agriculture.html">Agriculture</a></li>
+                    <li><a href="Inventions/space exploration/spaceexploration.html">Space Exploration</a></li>
+                    <li><a href="Inventions/materials science/materialsscience.html">Materials Science</a></li>
+                    <li><a href="Inventions/energy/energy.html">Energy</a></li>
+                  </ul>
+                </div>
+                <a href="References/references.html" class="nav-link">References</a>
+              </div>
             </div>
           </div>
-          <div class="nav-links">
-            <a href="homepage.html" class="nav-link">Home</a>
-            <a href="AboutUs/aboutus.html" class="nav-link">About Us</a>
-            <div class="dropdown">
-              <a href="Inventors/inventors.html" class="nav-link">Inventors</a>
-              <ul class="dropdown-content">
-                <li><a href="Inventors/thomasedison.html">Thomas Edison</a></li>
-                <li><a href="Inventors/grahambell.html">Alexander Graham Bell</a></li>
-                <li><a href="Inventors/nikolatesla.html">Nikola Tesla</a></li>
-                <li><a href="Inventors/bernerslee.html">Tim Berners-Lee</a></li>
-                <li><a href="Inventors/karlbenz.html">Karl Benz</a></li>
-                <li><a href="Inventors/charlesbabbage.html">Charles Babbage</a></li>
-                <li><a href="Inventors/martincooper.html">Martin Cooper</a></li>
-                <li><a href="Inventors/georgewashington.html">George Washington Carver</a></li>
-                <li><a href="Inventors/heddylamarr.html">Hedy Lamarr</a></li>
-                <li><a href="Inventors/gladyswest.html">Gladys West</a></li>
-              </ul>
-            </div>
-            <div class="dropdown">
-              <a href="Subtopics/subtopics.html" class="nav-link">Categories</a>
-              <ul class="dropdown-content">
-                <li><a href="Inventions/transportation/transportation.html">Transportation</a></li>
-                <li><a href="Inventions/communication/communication.html">Communication</a></li>
-                <li><a href="Inventions/modern innovation/moderninnovation.html">Modern Innovations</a></li>
-                <li><a href="Inventions/medical technology/medicaltechnology.html">Medical Technology</a></li>
-                <li><a href="Inventions/agriculture/agriculture.html">Agriculture</a></li>
-                <li><a href="Inventions/space exploration/spaceexploration.html">Space Exploration</a></li>
-                <li><a href="Inventions/materials science/materialsscience.html">Materials Science</a></li>
-                <li><a href="Inventions/energy/energy.html">Energy</a></li>
-              </ul>
-            </div>
-            <a href="#" class="nav-link">References</a>
-          </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
 
       <main>
-        <section class="banner-section" aria-labelledby="banner-heading">
+        <section class="banner-section">
           <img
             src="banner.png"
             alt="Technological innovations throughout history"
@@ -75,17 +84,15 @@
             <p class="banner-description">
               Exploring the inventions that shaped human history
             </p>
-            <a href="Subtopics/subtopics.html" class="cta-button"
-              >Explore Innovations</a
-            >
+            <a href="Subtopics/subtopics.html" class="cta-button">Explore Innovations</a>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
         <div class="footer-container">
-          <div class="footer-row">
-            <div class="footer-section">
+          <div class="footer-row fixed-two">
+            <div class="footer-section about-us">
               <h3 class="footer-title">About Us</h3>
               <p class="footer-text">
                 Dedicated to documenting and sharing the most impactful
@@ -94,30 +101,17 @@
               <a href="AboutUs/aboutus.html" class="footer-link">Learn More About Us</a>
             </div>
 
-            <div class="footer-section">
+            <div class="footer-section contact-us">
               <h3 class="footer-title">Contact Us</h3>
-              <div class="contact-info">
-                <p class="footer-text">
-                  <a href="tel:+1234567890" class="footer-link">Phone: (123) 456-7890</a>
-                </p>
-                <p class="footer-text">
-                  <a href="tel:+1987654321" class="footer-link">Tel: (987) 654-3210</a>
-                </p>
-                <p class="footer-text">
-                  <a href="mailto:contact@techthrough.com" class="footer-link">Email: contact@techthrough.com</a>
-                </p>
-              </div>
-            </div>
-
-            <div class="footer-section">
-              <h3 class="footer-title">Newsletter</h3>
               <p class="footer-text">
-                Stay updated with the latest technological breakthroughs and innovations.
+                <a href="tel:+1234567890" class="footer-link">Phone: (123) 456-7890</a>
               </p>
-              <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email" class="newsletter-input" />
-                <button type="submit" class="newsletter-button">Subscribe</button>
-              </form>
+              <p class="footer-text">
+                <a href="tel:+1987654321" class="footer-link">Tel: (987) 654-3210</a>
+              </p>
+              <p class="footer-text">
+                <a href="mailto:contact@techthrough.com" class="footer-link">Email: contact@techthrough.com</a>
+              </p>
             </div>
           </div>
         </div>
