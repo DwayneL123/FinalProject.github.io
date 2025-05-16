@@ -68,7 +68,7 @@ body {
 }
 
 .site-title {
-  font-family: 'Playfair Display', serif;
+  font-family: Georgia, serif;
   font-size: 24px;
   font-weight: bold;
   color: var(--text-light);
@@ -136,7 +136,7 @@ body {
 }
 
 .categories h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: Georgia, serif;
   font-size: 2.5rem;
   margin-bottom: 2rem;
   font-weight: bold;
@@ -184,7 +184,7 @@ body {
 }
 
 .card-content h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: Georgia, serif;
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -231,7 +231,7 @@ body {
 }
 
 .footer-title {
-  font-family: 'Playfair Display', serif;
+  font-family: Georgia, serif;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 16px;
