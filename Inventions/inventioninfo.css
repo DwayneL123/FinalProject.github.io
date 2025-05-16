@@ -433,6 +433,10 @@ input:focus {
 }
 
 @media (max-width: 1024px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
   .footer-row.fixed-two {
     flex-wrap: wrap;
     gap: 32px;
