@@ -68,7 +68,7 @@ body {
 }
 
 .site-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Georgia', serif;
   font-size: 24px;
   font-weight: bold;
   color: var(--text-light);
@@ -141,15 +141,19 @@ body {
 }
 
 .hero-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Georgia', serif;
   font-size: 54px;
   font-weight: 700;
   color: #fefcfb;
   line-height: 81px;
 }
 
+.hero-title span {
+  font-family: 'Georgia', serif;
+}
+
 .section-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Georgia', serif;
   font-size: 24px;
   font-weight: 700;
   color: #fefcfb;
@@ -217,7 +221,7 @@ body {
 }
 
 .member-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Georgia', serif;
   font-size: 20px;
   font-weight: 700;
   color: #0a1128;
@@ -265,7 +269,7 @@ body {
 }
 
 .footer-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Georgia', serif;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 16px;
