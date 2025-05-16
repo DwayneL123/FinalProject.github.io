@@ -68,7 +68,7 @@ body {
 }
 
 .site-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Georgia', serif;
   font-size: 24px;
   font-weight: bold;
   color: var(--text-light);
@@ -137,7 +137,7 @@ body {
 }
 
 .section-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Georgia', serif;
   color: #0a1128;
   font-size: 48px;
   text-align: center;
@@ -249,7 +249,7 @@ body {
 }
 
 .footer-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Georgia', serif;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 16px;
