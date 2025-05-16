@@ -1,0 +1,583 @@
+:root {
+  --primary-dark: #0a1128;
+  --primary-medium: #001f54;
+  --primary-light: #034078;
+  --accent: #1282a2;
+  --background: #fefcfb;
+  --text-light: #fefcfb;
+  --Secondary-bg: #dbe9f4;
+  --shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary-dark);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 58px;
+}
+
+.main-nav {
+  width: 100%;
+  background-color: var(--primary-dark);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  margin: 0 auto;
+  padding: 0 16px 0 0px;
+}
+
+.nav-top {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  margin-left: 15px;
+  height: 35px;
+  width: auto;
+  display: block;
+}
+
+.site-title {
+  font-family: 'Georgia', serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-light);
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  font-size: 16px;
+  color: var(--text-light);
+  text-decoration: none;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #1282a2;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--primary-medium);
+  min-width: 200px;
+  box-shadow: var(--shadow);
+  z-index: 1001;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content a {
+  color: var(--text-light);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--primary-light);
+}
+
+.main-content {
+  margin: 0 auto;
+}
+
+.hero-section {
+  width: 100%;
+  height: 564px;
+  background-color: #dbe9f4;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  display: flex;
+  gap: 32px;
+}
+
+.inventor-image-container {
+  margin-left: 100px;
+  width: 400px;
+  height: 500px;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1), 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.inventor-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inventor-info {
+  flex: 1;
+}
+
+.inventor-name {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0a1128;
+  margin-bottom: 32px;
+  font-family: 'Georgia', serif;
+}
+
+.inventor-description {
+  font-family: 'Inter', sans-serif;
+  text-indent: 50px;
+  margin-right: 100px;
+  text-align: justify;
+  font-size: 18px;
+  color: #0a1128;
+  line-height: 29px;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #0a1128;
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  font-family: 'Georgia', serif;
+}
+
+.innovations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.innovation-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.innovation-circle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #034078;
+}
+
+.innovation-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.innovation-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(3, 64, 120, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+}
+
+.innovation-circle:hover .innovation-overlay {
+  opacity: 1;
+}
+
+.innovation-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fefcfb;
+  margin-bottom: 8px;
+  font-family: 'Georgia', serif;
+}
+
+.innovation-year {
+  font-size: 14px;
+  color: #fefcfb;
+  margin-bottom: 8px;
+}
+
+.innovation-description {
+  font-size: 14px;
+  color: #fefcfb;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.innovation-name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #034078;
+  margin-top: 24px;
+  font-family: 'Georgia', serif;
+}
+
+.site-footer {
+  background-color: var(--primary-dark);
+  color: var(--text-light);
+  padding: 48px 24px;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-row.fixed-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
+  flex-wrap: nowrap;
+}
+
+.footer-section {
+  flex: 1;
+  max-width: 50%;
+}
+
+.about-us {
+  text-align: left;
+}
+
+.contact-us {
+  margin-left: 500px;
+  text-align: left;
+}
+
+.footer-title {
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: var(--text-light);
+}
+
+.footer-text {
+  font-size: 16px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.footer-link {
+  font-size: 16px;
+  color: var(--text-light);
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid var(--text-light);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--text-light);
+}
+
+.newsletter-input::placeholder {
+  color: rgba(254, 252, 251, 0.7);
+}
+
+.newsletter-button {
+  padding: 8px 16px;
+  background-color: var(--accent);
+  border: none;
+  border-radius: 4px;
+  color: var(--text-light);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.newsletter-button:hover {
+  background-color: var(--primary-light);
+}
+
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.nav-toggle-label span {
+  display: block;
+  height: 3px;
+  background-color: var(--text-light);
+  border-radius: 2px;
+}
+
+@media (max-width: 1024px) {
+  .footer-row.fixed-two {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .contact-us {
+    margin-left: 0;
+  }
+
+  .footer-section {
+    max-width: 100%;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+    padding: 24px;
+    align-items: center;
+  }
+
+  .inventor-image-container {
+    margin-left: 0;
+    width: 80%;
+    height: auto;
+  }
+
+  .inventor-description {
+    margin-right: 0;
+  }
+
+  .innovations-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 0 16px;
+  }
+
+  .site-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-top {
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    padding: 12px 20px;
+  }
+
+  .nav-toggle-label {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: var(--primary-dark);
+    position: absolute;
+    top: 58px;
+    left: 0;
+    z-index: 999;
+    padding: 12px 20px;
+  }
+
+  .nav-toggle:checked + .nav-toggle-label + .nav-links {
+    display: flex;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: block;
+    position: static;
+    box-shadow: none;
+    background-color: var(--primary-medium);
+    margin-top: 0;
+  }
+
+  .nav-toggle:checked ~ .nav-links .dropdown-content {
+    display: none;
+  }
+
+  .dropdown-content a {
+    padding-left: 24px;
+  }
+
+  .hero-section {
+    padding: 20px;
+  }
+
+  .inventor-image-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .inventor-name {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .inventor-description {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+    padding: 0 10px;
+  }
+
+  .innovations-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .innovation-circle {
+    width: 100%;
+    height: 250px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .newsletter-button {
+    width: 100%;
+  }
+
+  .footer-row.fixed-two {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-title {
+    font-size: 18px;
+  }
+
+  .footer-text,
+  .footer-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .inventor-name {
+    font-size: 24px;
+  }
+
+  .inventor-description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .innovation-title,
+  .innovation-name {
+    font-size: 18px;
+  }
+
+  .innovation-description {
+    font-size: 13px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .footer-title {
+    font-size: 16px;
+  }
+
+  .footer-text,
+  .footer-link {
+    font-size: 13px;
+  }
+}
