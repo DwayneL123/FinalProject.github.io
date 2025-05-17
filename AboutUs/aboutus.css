@@ -193,6 +193,7 @@ body {
 .gallery-button:hover,
 .gallery-button:focus {
   background-color: #fefcfb;
+  color: #001f54;
   transform: translateY(-2px);
 }
 
