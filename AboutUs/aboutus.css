@@ -170,6 +170,33 @@ body {
   margin-right: auto;
 }
 
+.gallery-button-wrapper {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.gallery-button {
+  font-family: Georgia, serif;
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--text-light);
+  font-size: 20px;
+  padding: 12px 24px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: var(--shadow);
+}
+
+.gallery-button:hover,
+.gallery-button:focus {
+  background-color: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+
 .main-content {
   max-width: 1600px;
   margin-left: auto;
