@@ -229,7 +229,6 @@ input:focus {
   border-radius: 2px;
 }
 
-/* References Section */
 .references-container {
   display: flex;
   flex-direction: column;
@@ -242,7 +241,7 @@ input:focus {
 
 .references-header {
   width: 100%;
-  background-color: #001f54;
+  background-color: #034078;
   padding: 32px 24px;
 }
 
@@ -330,7 +329,6 @@ input:focus {
   color: #001f54;
 }
 
-/* Arrow styling */
 .category-arrow {
   display: inline-block;
   width: 16px;
@@ -348,7 +346,6 @@ input:focus {
   transform: rotate(-135deg);
 }
 
-/* Responsive Design */
 @media (max-width: 991px) {
   .references-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
