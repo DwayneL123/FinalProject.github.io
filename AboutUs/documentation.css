@@ -68,7 +68,7 @@ body {
 }
 
 .site-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Georgia', serif;
   font-size: 24px;
   font-weight: bold;
   color: var(--text-light);
@@ -227,7 +227,7 @@ input:focus {
 }
 
 .gallery-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Georgia', serif;
   font-size: 42px;
   font-weight: 700;
   color: #0a1128;
